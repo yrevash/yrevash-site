@@ -45,11 +45,3 @@ export const EXPERIENCE = [
     description: "Optimized YOLO inference on Raspberry Pi achieving 30+ FPS. Built Qt-based CAD application reducing deployment time by 50%.",
   },
 ];
-
-export const HIGHLIGHTS = [
-  "Robotics Club Lead – Led smart navigation system for visually impaired using sensor fusion",
-  "Winner – Local Robotics Competition with path-following robot using PID control",
-  "Runner-Up – ClearRoute Agentic AI Hackathon, led 5-member team building racing analytics system",
-  "IBM Machine Learning Professional Certificate",
-];
-

@@ -2,7 +2,7 @@
 
 import { LINKS } from "@/data/links";
 import { SKILLS } from "@/data/skills";
-import { PROJECTS, EXPERIENCE, HIGHLIGHTS } from "@/data/projects";
+import { PROJECTS, EXPERIENCE } from "@/data/projects";
 import NeoCard from "@/components/NeoCard";
 import Link from "next/link";
 import { ArrowUpRight, Briefcase, Award, Sparkles, Zap, Rocket } from "lucide-react";
@@ -104,7 +104,7 @@ export default function Home() {
       <section id="projects">
         <div className="mb-8 inline-block">
             <h2 className="text-4xl font-black bg-gradient-to-r from-secondary to-accent text-white px-6 py-2 border-3 border-black shadow-neobrutalism-sm -rotate-1 flex items-center gap-2">
-            🚀 COOL STUFF I BUILT
+            COOL STUFF I BUILT
             </h2>
         </div>
         
@@ -121,9 +121,6 @@ export default function Home() {
             >
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-2xl font-black flex items-center gap-2">
-                  {idx === 0 && '🎯 '}
-                  {idx === 1 && '🤖 '}
-                  {idx === 2 && '🎵 '}
                   {project.title}
                 </h3>
                 {project.highlight && (
@@ -190,32 +187,6 @@ export default function Home() {
               <p className="text-sm font-medium leading-relaxed">
                 {exp.description}
               </p>
-            </NeoCard>
-          ))}
-        </div>
-      </section>
-
-      {/* HIGHLIGHTS SECTION */}
-      <section id="highlights">
-        <div className="mb-8 inline-block">
-            <h2 className="text-4xl font-black bg-gradient-to-r from-main via-accent to-secondary text-white px-6 py-2 border-3 border-black shadow-neobrutalism-sm -rotate-1">
-            🏆 WINS & CERTS
-            </h2>
-        </div>
-        
-        <div className="grid md:grid-cols-2 gap-4">
-          {HIGHLIGHTS.map((highlight, idx) => (
-            <NeoCard 
-              key={idx} 
-              className={`
-                ${idx % 4 === 0 ? 'bg-main/10 border-main/30' : idx % 4 === 1 ? 'bg-accent/10 border-accent/30' : idx % 4 === 2 ? 'bg-secondary/10 border-secondary/30' : 'bg-white'} 
-                flex items-start gap-3 p-4 
-                hover:rotate-1 hover:scale-105 transition-all duration-300
-                cursor-pointer
-              `}
-            >
-              <Award size={24} className="flex-shrink-0 mt-1 text-accent" />
-              <p className="text-sm font-bold">{highlight}</p>
             </NeoCard>
           ))}
         </div>
