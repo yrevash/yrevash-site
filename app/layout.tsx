@@ -1,21 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Nav } from "./components/ui/Nav";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Navbar from "@/components/NavBar"; // Import the Navbar
 
 export const metadata: Metadata = {
-  title: "Yash Tiwari — Mechatronics Engineer",
-  description: "Portfolio of Yash Tiwari — ROS 2, Computer Vision, Robotics and AI",
+  title: "Yrevash Portfolio",
+  description: "Neobrutalism Portfolio",
 };
 
 export default function RootLayout({
@@ -25,10 +14,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}
-      >
-        <Nav />
+      <body>
+        <Navbar /> {/* Add Navbar here */}
         {children}
       </body>
     </html>
