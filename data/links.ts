@@ -10,7 +10,7 @@ export const LINKS = [
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/yash-tiwari",
+    href: "https://linkedin.com/in/yrevash",
     icon: Linkedin,
   },
   {

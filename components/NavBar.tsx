@@ -9,15 +9,15 @@ export default function Navbar() {
       </Link>
       
       <div className="flex gap-6 font-bold text-sm md:text-base">
-        <Link href="/" className="hover:underline decoration-4 decoration-main underline-offset-4">
+        <a href="#home" className="hover:underline decoration-4 decoration-main underline-offset-4">
           Home
-        </Link>
-        <Link href="/work" className="hover:underline decoration-4 decoration-accent underline-offset-4">
+        </a>
+        <a href="#experience" className="hover:underline decoration-4 decoration-accent underline-offset-4">
           Work
-        </Link>
-        <Link href="https://github.com/yourusername" target="_blank" className="hover:underline decoration-4 decoration-secondary underline-offset-4">
+        </a>
+        <a href="https://github.com/yrevash" target="_blank" className="hover:underline decoration-4 decoration-secondary underline-offset-4">
           GitHub
-        </Link>
+        </a>
       </div>
     </nav>
   );

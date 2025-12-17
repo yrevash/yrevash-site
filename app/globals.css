@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+@theme {
+  --color-main: #6366f1;
+  --color-accent: #ec4899;
+  --color-secondary: #14b8a6;
+  --color-tertiary: #f59e0b;
+  
+  --shadow-neobrutalism: 5px 5px 0px 0px rgba(0,0,0,1);
+  --shadow-neobrutalism-sm: 3px 3px 0px 0px rgba(0,0,0,1);
+  
+  --font-black: 900;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 240, 240, 240;
@@ -8,11 +20,42 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
-  font-family: monospace, sans-serif; /* Monospace fits the brutalist vibe */
+  font-family: monospace, sans-serif;
 }
 
 /* Base styles for standard elements */
 h1, h2, h3 {
   font-weight: 800;
   letter-spacing: -0.05em;
+}
+
+/* Cool animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 5s ease infinite;
 }
