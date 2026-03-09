@@ -58,14 +58,9 @@ export default function Nav() {
       >
         {/* Desktop nav */}
         <div
-          className="relative hidden items-center rounded-full md:flex"
+          className="relative hidden items-center rounded-full border border-gray-200 bg-white/80 shadow-lg backdrop-blur-xl dark:border-white/[0.15] dark:bg-white/[0.08] md:flex"
           style={{
-            background: 'rgba(255,255,255,0.08)',
-            border: '1px solid rgba(255,255,255,0.15)',
-            boxShadow:
-              'inset 0 1px 2px rgba(255,255,255,0.18), inset 0 -1px 2px rgba(0,0,0,0.25), 0 8px 32px rgba(0,0,0,0.18)',
-            backdropFilter: 'blur(16px) saturate(180%)',
-            WebkitBackdropFilter: 'blur(16px) saturate(180%)',
+            boxShadow: 'inset 0 1px 2px rgba(255,255,255,0.3), inset 0 -1px 2px rgba(0,0,0,0.08), 0 8px 32px rgba(0,0,0,0.12)',
             padding: '6px 8px',
           }}
           onMouseLeave={() => setHovered(null)}
@@ -104,10 +99,10 @@ export default function Nav() {
                   href={link.href}
                   className={`relative z-10 block rounded-full px-4 py-1.5 text-sm font-medium transition-colors duration-200 ${
                     isActive
-                      ? 'text-white'
+                      ? 'text-white dark:text-white'
                       : hovered === link.href
-                        ? 'text-white'
-                        : 'text-gray-300 dark:text-gray-400'
+                        ? 'text-gray-900 dark:text-white'
+                        : 'text-gray-600 dark:text-gray-400'
                   }`}
                 >
                   {link.label}
@@ -125,19 +120,12 @@ export default function Nav() {
 
         {/* Mobile menu button */}
         <div
-          className="flex items-center gap-2 rounded-full px-4 py-2 md:hidden"
-          style={{
-            background: 'rgba(255,255,255,0.08)',
-            border: '1px solid rgba(255,255,255,0.15)',
-            backdropFilter: 'blur(16px)',
-            WebkitBackdropFilter: 'blur(16px)',
-            boxShadow: 'inset 0 1px 2px rgba(255,255,255,0.15), 0 4px 16px rgba(0,0,0,0.2)',
-          }}
+          className="flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 shadow-lg backdrop-blur-xl dark:border-white/15 dark:bg-white/[0.08] md:hidden"
         >
           <span className="text-sm font-bold text-main">yrevash</span>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="rounded-full p-1 text-gray-300"
+            className="rounded-full p-1 text-gray-600 dark:text-gray-300"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
