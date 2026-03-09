@@ -1,21 +1,25 @@
-// data/links.ts
-import { SiGithub } from '@icons-pack/react-simple-icons';
-import { Mail, Linkedin } from 'lucide-react';
+import { SiGithub } from '@icons-pack/react-simple-icons'
+import { Mail, Linkedin } from 'lucide-react'
 
-export const LINKS = [
+const LINKS = [
   {
-    name: "GitHub",
-    href: "https://github.com/yrevash",
+    name: 'GitHub',
+    href: 'https://github.com/yrevash',
     icon: SiGithub,
+    ariaLabel: 'GitHub profile',
   },
   {
-    name: "LinkedIn",
-    href: "https://linkedin.com/in/yrevash",
+    name: 'LinkedIn',
+    href: 'https://linkedin.com/in/yrevash',
     icon: Linkedin,
+    ariaLabel: 'LinkedIn profile',
   },
   {
-    name: "Email",
-    href: "mailto:yashtiwari9182@gmail.com",
+    name: 'Email',
+    href: 'mailto:yashtiwari9182@gmail.com',
     icon: Mail,
+    ariaLabel: 'Send email',
   },
-];
+]
+
+export default LINKS

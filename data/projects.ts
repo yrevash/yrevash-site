@@ -1,47 +1,23 @@
 export const PROJECTS = [
   {
-    title: "Aadhaar Processing API",
-    description: "High-performance document verification system with Redis caching and distributed memory management. Automated detection using YOLOv8 + multilingual OCR, achieving 95%+ accuracy.",
-    tags: ["Python", "FastAPI", "YOLOv8", "OpenCV", "Redis"],
+    title: 'Aadhaar Processing API',
+    description:
+      'High-performance document processing system with Redis-based model caching and distributed memory management. Automated Aadhaar card detection using YOLOv8 + multilingual OCR achieving 95%+ verification accuracy. Async FastAPI service with sub-second inference latency, reducing manual processing by 80%.',
+    tags: ['Python', 'FastAPI', 'YOLOv8', 'OpenCV', 'Tesseract', 'Redis'],
     highlight: true,
   },
   {
-    title: "Autonomous Car",
-    description: "Miniature self-driving car with lane detection and obstacle avoidance using computer vision and sensor fusion. Real-time path planning for semi-autonomous driving.",
-    tags: ["Python", "OpenCV", "Raspberry Pi", "Sensors"],
+    title: 'Autonomous Car (Raspberry Pi)',
+    description:
+      'Miniature self-driving car using Raspberry Pi, Pi Camera, ultrasonic, and IR sensors for perception and navigation. Implemented lane detection and obstacle avoidance with OpenCV and sensor fusion. Real-time decision-making for path planning in structured environments.',
+    tags: ['Python', 'OpenCV', 'Raspberry Pi', 'IR Sensors', 'Linux'],
     highlight: false,
   },
   {
-    title: "Gesture Processing System",
-    description: "Real-time gesture recognition for live performers with sub-millisecond latency. Ported Paura Gestures Library to Avendish runtime with optimized C++ implementations.",
-    tags: ["C++", "Real-time", "Audio"],
+    title: 'Real-Time Gesture Processing System',
+    description:
+      'High-performance gesture processing system for professional musicians and live performers. Ported Paura Gestures Library to Avendish runtime with optimized C++ implementations achieving sub-millisecond latency for critical live performance scenarios.',
+    tags: ['C++', 'Real-time', 'GSoC', 'Audio', 'Avendish'],
     highlight: false,
   },
-];
-
-export const EXPERIENCE = [
-  {
-    company: "Qoneqt",
-    role: "Software Engineer",
-    period: "Dec 2025 - Present",
-    description: "Built verification agent processing 10k+ users daily with custom pipeline for instant data verification.",
-  },
-  {
-    company: "Qoneqt",
-    role: "AI Engineer",
-    period: "Jun 2025 - Sep 2025",
-    description: "Scaled Aadhaar authentication to 20k+ users, raising accuracy from 28% to 95%. Deployed LLM-powered testing agent boosting CI throughput by 40%.",
-  },
-  {
-    company: "Google Summer of Code",
-    role: "Software Developer",
-    period: "May 2025 - Sep 2025",
-    description: "Built real-time gesture processing system for musicians with sub-millisecond latency using optimized C++ implementations.",
-  },
-  {
-    company: "Stamp 'IT Robotai",
-    role: "Embedded Engineer",
-    period: "Mar 2025 - May 2025",
-    description: "Optimized YOLO inference on Raspberry Pi achieving 30+ FPS. Built Qt-based CAD application reducing deployment time by 50%.",
-  },
-];
+]

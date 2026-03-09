@@ -1,23 +1,24 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import Navbar from "@/components/NavBar"; // Import the Navbar
+import type { Metadata } from 'next'
+import { Montserrat } from 'next/font/google'
+import './globals.css'
+import ClientShell from '@/components/client-shell'
+
+const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat' })
 
 export const metadata: Metadata = {
-  title: "Yrevash Portfolio",
-  description: "Neobrutalism Portfolio",
-};
+  title: 'Yash Tiwari | Robotics & AI Engineer',
+  description: 'Building intelligent robots and AI systems.',
+  icons: {
+    icon: '/favicon.ico',
+  },
+}
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body>
-        <Navbar /> {/* Add Navbar here */}
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className={montserrat.className}>
+        <ClientShell>{children}</ClientShell>
       </body>
     </html>
-  );
+  )
 }
