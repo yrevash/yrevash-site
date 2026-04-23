@@ -10,8 +10,8 @@ import Magnetic from '@/components/magnetic'
 import BackgroundScene from '@/components/three/background-scene'
 
 const orbitSkills = [
-  ['ROS', 'SLAM', 'AI', 'ML'],
-  ['OpenCV', 'Python', 'C++', 'Docker'],
+  ['LLM', 'RAG', 'AI', 'ML'],
+  ['YOLO', 'Python', 'PyTorch', 'Docker'],
 ]
 
 const typingLines = [
@@ -21,15 +21,15 @@ const typingLines = [
     className: 'text-5xl sm:text-7xl font-black text-gray-900 dark:text-white leading-none mt-1',
   },
   {
-    text: 'building intelligent robots & AI systems,',
+    text: 'building production AI systems,',
     className: 'text-base sm:text-lg text-gray-600 dark:text-gray-300 mt-3',
   },
   {
-    text: 'crafting autonomous vehicles and',
+    text: 'crafting LLM agents and',
     className: 'text-base sm:text-lg text-gray-600 dark:text-gray-300',
   },
   {
-    text: 'computer vision solutions from scratch.',
+    text: 'computer vision pipelines at scale.',
     className: 'text-base sm:text-lg text-gray-600 dark:text-gray-300',
   },
 ]
@@ -90,7 +90,7 @@ export default function HomePage() {
                   animate={{ y: [0, -4, 0] }}
                   transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
                 >
-                  Robots & AI 🤖
+                  AI & LLMs ✨
                 </motion.div>
               </motion.div>
             </div>

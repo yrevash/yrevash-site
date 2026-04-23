@@ -14,7 +14,7 @@ const introLines = [
     className: 'text-3xl sm:text-4xl font-black text-gray-900 dark:text-white',
   },
   {
-    text: 'Mechatronics Engineer · Robotics & AI.',
+    text: 'AI Engineer · LLMs & Computer Vision.',
     className: 'text-xl sm:text-2xl font-semibold text-main mt-1',
   },
 ]
@@ -69,16 +69,16 @@ export default function AboutPage() {
           <TypingText lines={introLines} />
           <div className="mt-8 max-w-2xl space-y-4 text-gray-600 dark:text-gray-300 text-sm sm:text-base leading-relaxed">
             <p>
-              Mechatronics Engineering student at <span className="font-semibold text-main">New Horizon Institute of Technology</span>, Thane (GPA: 8.2/10) — building at the intersection of robotics, embedded systems, and AI.
+              I&apos;m an engineering student at <span className="font-semibold text-main">New Horizon Institute of Technology</span> in Thane, and I spend most of my time building AI stuff, mostly around LLMs, agents, and computer vision. I like the messy, end-to-end kind of work: from model to deploy to the thing actually running in production.
             </p>
             <p>
-              Currently working as a <span className="font-semibold text-main">Software Engineer at Qoneqt</span>, where I previously built a scalable Aadhaar authentication pipeline serving 20,000+ users, raising verification accuracy from 28% to 95%.
+              Right now I&apos;m a <span className="font-semibold text-main">Software Engineer at Qoneqt</span>, shipping AI agents that handle 20,000+ verifications a day and personal agents for about 250,000 users. Before that, as an AI Engineer on the same team, I rebuilt their Aadhaar verification pipeline and pushed accuracy from 48% up to 95%.
             </p>
             <p>
-              As a <span className="font-semibold text-main">Google Summer of Code</span> developer, I architected a real-time gesture processing system for professional musicians — porting the Paura Gestures Library to Avendish runtime with sub-millisecond C++ latency.
+              I also did <span className="font-semibold text-main">Google Summer of Code</span> with SAT Montreal, porting the Puara Gestures library to the Avendish runtime so musicians could use it live on stage without latency getting in the way.
             </p>
             <p>
-              At <span className="font-semibold text-main">Stamp 'IT Robotai</span>, I optimized deep learning inference on Raspberry Pi hardware, achieving 30+ FPS YOLO object detection at 720p using TensorFlow Lite. I also built a Qt-based CAD application that cut deployment setup time by 50%.
+              Earlier, at <span className="font-semibold text-main">Stamp &apos;IT</span>, I squeezed a YOLO detection pipeline to 30+ FPS at 720p on a Raspberry Pi and built a Qt-based CAD tool that cut their setup time in half. Good reminder that making things fast on small hardware is a skill of its own.
             </p>
           </div>
 

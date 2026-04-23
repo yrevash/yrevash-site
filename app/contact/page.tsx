@@ -17,21 +17,21 @@ const contactCards = [
     value: 'yashtiwari9182@gmail.com',
     href: 'mailto:yashtiwari9182@gmail.com',
     icon: Mail,
-    description: 'Best way to reach me',
+    description: 'The fastest way to get to me',
   },
   {
     name: 'GitHub',
     value: 'github.com/yrevash',
     href: 'https://github.com/yrevash',
     icon: SiGithub,
-    description: 'Check out my code',
+    description: 'Where the code actually lives',
   },
   {
     name: 'LinkedIn',
     value: 'linkedin.com/in/yrevash',
     href: 'https://linkedin.com/in/yrevash',
     icon: Linkedin,
-    description: "Let's connect professionally",
+    description: 'Say hi, connect, or stalk a little',
   },
 ]
 
@@ -53,7 +53,7 @@ export default function ContactPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
-          Have a project in mind or want to chat about robotics? Reach out anytime.
+          Got an idea you want to build, or just want to nerd out about AI? Drop me a line.
         </motion.p>
 
         {/* Spider-Man meme */}

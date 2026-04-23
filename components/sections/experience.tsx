@@ -28,7 +28,7 @@ export default function Experience() {
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="text-xs text-gray-500 dark:text-gray-400 whitespace-nowrap">
-                        {role.startDate} — {role.endDate}
+                        {role.startDate} to {role.endDate}
                       </span>
                       {role.link && (
                         <a

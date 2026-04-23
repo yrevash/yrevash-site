@@ -1,22 +1,29 @@
 export const PROJECTS = [
   {
-    title: 'Aadhaar Processing API',
+    title: 'Aadhaar AI Verification System',
     description:
-      'High-performance document processing system with Redis-based model caching and distributed memory management. Automated Aadhaar card detection using YOLOv8 + multilingual OCR achieving 95%+ verification accuracy. Async FastAPI service with sub-second inference latency, reducing manual processing by 80%.',
-    tags: ['Python', 'FastAPI', 'YOLOv8', 'OpenCV', 'Tesseract', 'Redis'],
+      'A KYC pipeline that reads Aadhaar documents with a vision-language model (Qwen3-VL on Ollama) and matches faces with DeepFace. Runs as an async FastAPI service with Redis caching, sits around sub-second latency, and handles 20,000+ verifications a day. Took manual review work down by roughly 80%.',
+    tags: ['Python', 'FastAPI', 'Qwen3-VL', 'YOLO', 'DeepFace', 'Redis', 'Ollama'],
     highlight: true,
   },
   {
-    title: 'Autonomous Car (Raspberry Pi)',
+    title: 'Qoneqt Agent Network',
     description:
-      'Miniature self-driving car using Raspberry Pi, Pi Camera, ultrasonic, and IR sensors for perception and navigation. Implemented lane detection and obstacle avoidance with OpenCV and sensor fusion. Real-time decision-making for path planning in structured environments.',
-    tags: ['Python', 'OpenCV', 'Raspberry Pi', 'IR Sensors', 'Linux'],
+      'The AI layer behind Qoneqt, running for 250k+ users. Personal chat agents on GPT-4o-mini with per-user prompts, a RAG-powered memory vault on Qdrant, and a pgvector recommendation engine using HNSW. An LLM router with a circuit breaker shuffles work between external GPT-4o and a local vLLM+Qwen3-VL to keep cost and latency in check.',
+    tags: ['Python', 'FastAPI', 'GPT-4o', 'Qwen3-VL', 'vLLM', 'Qdrant', 'pgvector', 'Redis'],
+    highlight: true,
+  },
+  {
+    title: 'LLM-Powered Mobile App Testing Agent',
+    description:
+      'Fine-tuned Mistral-7B with LoRA on 10k+ instruction/YAML pairs so you can describe a test in plain English and get back a valid Maestro script. Wired into the CI flow, it ended up surfacing 3× more critical bugs before release.',
+    tags: ['Python', 'Mistral-7B', 'LoRA', 'Ollama', 'Maestro', 'Docker'],
     highlight: false,
   },
   {
     title: 'Real-Time Gesture Processing System',
     description:
-      'High-performance gesture processing system for professional musicians and live performers. Ported Paura Gestures Library to Avendish runtime with optimized C++ implementations achieving sub-millisecond latency for critical live performance scenarios.',
+      'My GSoC project with SAT Montreal. Ported the Puara Gestures library to Avendish, tightened it up in C++, and got the latency low enough that musicians could actually use it live on stage.',
     tags: ['C++', 'Real-time', 'GSoC', 'Audio', 'Avendish'],
     highlight: false,
   },

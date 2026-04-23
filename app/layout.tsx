@@ -6,8 +6,8 @@ import ClientShell from '@/components/client-shell'
 const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat' })
 
 export const metadata: Metadata = {
-  title: 'Yash Tiwari | Robotics & AI Engineer',
-  description: 'Building intelligent robots and AI systems.',
+  title: 'Yash Tiwari | AI Engineer',
+  description: 'Building production AI systems, LLM agents, and computer vision pipelines.',
   icons: {
     icon: '/favicon.ico',
   },

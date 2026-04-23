@@ -13,11 +13,11 @@ const PAST_ROLES: {
     company: 'Qoneqt',
     role: 'Software Engineer',
     description: [
-      'Developed a software verification agent to verify over 10k users daily.',
-      'Implemented a custom verification pipeline to enhance verification and data processing within seconds.',
+      'Shipping AI agents for platform integrations and user verification. They quietly chew through 20,000+ verifications a day.',
+      'Built out per-user personalized agents that now run for 250,000+ users on the platform.',
     ],
     startDate: 'Dec 2025',
-    endDate: 'Present',
+    endDate: 'Feb 2026',
     link: 'https://qoneqt.com',
   },
   {
@@ -25,9 +25,8 @@ const PAST_ROLES: {
     company: 'Qoneqt · Thane',
     role: 'Artificial Intelligence Engineer',
     description: [
-      'Architected and deployed a scalable Aadhaar authentication pipeline serving 20,000+ users on a social media platform, raising verification accuracy from 28% to 95% and reducing manual review time by 80%.',
-      'Led cross-functional design discussions with frontend, backend, and QA teams to architect NLP-to-automation pipeline.',
-      'Deployed an LLM-powered mobile-app testing agent with Ollama and Maestro across distributed Linux servers, boosting CI pipeline throughput by 40% and detecting 3× more critical bugs pre-release.',
+      'Rebuilt the Aadhaar authentication pipeline from the ground up. Accuracy jumped from 48% to 95% and manual review time dropped by about 80%.',
+      'Put together an LLM-powered mobile app testing agent with Ollama + Maestro that catches 3× more critical bugs before release.',
     ],
     startDate: 'Jun 2025',
     endDate: 'Sep 2025',
@@ -35,10 +34,10 @@ const PAST_ROLES: {
   },
   {
     id: '3',
-    company: 'Google Summer of Code · SAT',
+    company: 'Google Summer of Code · SAT Montreal',
     role: 'Software Developer',
     description: [
-      'Architected a high-performance real-time gesture processing system for professional musicians and live performers, porting Paura Gestures Library to Avendish runtime with optimized C++ implementations achieving sub-millisecond latency for critical live performance scenarios.',
+      'Worked with SAT Montreal on porting the Puara Gestures library to the Avendish runtime so musicians and live performers could use it on stage without latency getting in the way.',
     ],
     startDate: 'May 2025',
     endDate: 'Sep 2025',
@@ -47,11 +46,11 @@ const PAST_ROLES: {
   },
   {
     id: '4',
-    company: "Stamp 'IT Robotai & Solutions Pvt. Ltd · Thane",
-    role: 'Embedded Software Engineer',
+    company: "Stamp 'IT · Thane",
+    role: 'Software Engineer',
     description: [
-      'Optimized deep learning inference pipeline on resource-constrained Raspberry Pi hardware, achieving 30+ FPS YOLO object detection at 720p through model quantization, memory optimization, and efficient C++ implementation using TensorFlow Lite.',
-      'Built comprehensive Qt-based desktop CAD application for complex manufacturing processes, integrating real-time camera calibration, visualization tools, and automated geometric optimization workflows, reducing deployment setup time by 50%.',
+      'Squeezed a YOLO detection pipeline down to run at 30+ FPS on a Raspberry Pi at 720p. Mostly quantization, some memory tricks, and a lot of profiling.',
+      'Built a Qt-based desktop CAD tool with real-time camera calibration and automated geometric optimization that cut their deployment setup time in half.',
     ],
     startDate: 'Mar 2025',
     endDate: 'May 2025',
